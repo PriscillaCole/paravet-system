@@ -8,3 +8,4 @@
 .env
 
 /.vscode
+app/.DS_Store
