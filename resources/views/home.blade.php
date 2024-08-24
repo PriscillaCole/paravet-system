@@ -15,7 +15,7 @@
                         @endif
 
                         {{ __('You are logged in!') }}
-                        <h2><a href="{{ admin_url('') }}">ADMIN PANEL? Click Here</a></h2>
+                        <h2><a href="{{ admin_url('/') }}">ADMIN PANEL? Click Here</a></h2>
                     </div>
                 </div>
             </div>
