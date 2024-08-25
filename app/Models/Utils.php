@@ -10,6 +10,16 @@ class Utils extends Model
 {
     use HasFactory;
 
+    public static function validateEmail($email)
+    {
+        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+ 
+
     public static function apiSuccess($data = null, $message = 'Success')
     {
         header('Content-Type: application/json');
